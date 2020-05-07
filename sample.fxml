@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="352.0" prefWidth="338.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="327.0" prefWidth="320.0" GridPane.rowIndex="1">
+         <VBox prefHeight="327.0" prefWidth="172.0">
+            <TextField fx:id="minTextfield" promptText="Min">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="maxTextfield" promptText="Max">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="run1" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Run">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <JFXButton fx:id="load" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: black;" text="Load Numbers" wrapText="true">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="delete" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: black;" text="Delete Table">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin></JFXButton>
+            <Label prefHeight="20.0" prefWidth="150.0" text="Random Number Result">
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="result" prefHeight="33.0" prefWidth="144.0" textFill="#210af0">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+         </VBox>
+         <JFXListView fx:id="numbersListView" prefHeight="327.0" prefWidth="151.0" />
+      </HBox>
+      <Label prefWidth="146.0" text="Random Number List">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="175.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
